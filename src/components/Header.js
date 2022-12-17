@@ -9,7 +9,7 @@ function Header() {
     }, []);
 
     return (
-        <div className="header component" onScrollDown={() => alert("gola")}>
+        <div className="header component">
             <Particles
                 id="tsparticles"
                 init={particlesInit}
