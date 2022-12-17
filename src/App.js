@@ -3,8 +3,11 @@ import Header from "./components/Header";
 
 function App() {
     return (
-        <div>
+        <div className="GENERAL-CONTAINER">
             <Header />
+            <div id="pseudo-body" className="component">
+                SECOND COMPONENT (comming xd)
+            </div>
         </div>
     );
 }

@@ -1,1 +1,14 @@
+body,
+html {
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
 
+.GENERAL-CONTAINER {
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+}
+
+.component {
+    scroll-snap-align: start start;
+}
