@@ -23,7 +23,6 @@
 }
 
 .icon {
-    /* border: 1px solid red; */
     margin-left: 15px;
 }
 
@@ -71,7 +70,6 @@
 }
 
 .contact-title {
-    /* width: 100%; */
     margin-top: 10px;
     width: 70%;
     height: 0.5%;
@@ -162,7 +160,6 @@
 
 .about-scroll-btn span {
     margin-top: 25px;
-    /* background: white; */
     width: 15px;
     aspect-ratio: 1;
     transform: rotate(45deg);
