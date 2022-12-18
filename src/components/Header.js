@@ -28,8 +28,8 @@ function Header() {
                                 mode: "push",
                             },
                             onHover: {
-                                enable: true,
-                                mode: "repulse",
+                                enable: false,
+                                mode: "push",
                             },
                             resize: true,
                         },
@@ -92,9 +92,16 @@ function Header() {
                     Jos&eacute; Mar&iacute;a Pahino
                 </h1>
                 <h2 className="titles" id="work">
-                    Full-Stack developer
+                    Junior full stack developer
                 </h2>
             </div>
+            <a href="#pseudo-body">
+                <div className="scroll-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </a>
         </div>
     );
 }
