@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import { useCallback } from "react";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
+import Proyects from "./components/Proyects";
 
 console.log(
     "%cAre you looking how I made my portfolio?",
@@ -105,6 +106,7 @@ function App() {
             />
             <Header />
             <About />
+            <Proyects />
         </div>
     );
 }
