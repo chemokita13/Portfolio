@@ -16,4 +16,5 @@ html {
 
 .component {
     scroll-snap-align: center center;
+    height: 100vh;
 }
