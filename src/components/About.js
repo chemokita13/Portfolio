@@ -81,7 +81,7 @@ function About() {
                 <Fade right>
                     <p className="about-description">
                         I am a full stack developer living in Spain. I have a
-                        hight level in <u>React.js and SSR with Next.js</u>, but
+                        high level in <u>React.js and SSR with Next.js</u>, but
                         also I have practised with Angular or Handlebars. In the
                         back-end side, I am good with node.js with{" "}
                         <u>express or socket.io</u>, but also I have proyects
