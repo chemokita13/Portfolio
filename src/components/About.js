@@ -96,7 +96,7 @@ function About() {
             </Fade>
             <div className="about-container contact-container">
                 <Fade left>
-                    <p className="about-description contact-description">
+                    <div className="about-description contact-description">
                         You can contact me with this form:
                         <form className="contact-form">
                             <input name="name" placeholder="Name" />
@@ -108,7 +108,7 @@ function About() {
                                 Submit
                             </button>
                         </form>
-                    </p>
+                    </div>
                 </Fade>
                 <Fade right>
                     <div className="about-card contact-card">

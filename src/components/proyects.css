@@ -1,0 +1,39 @@
+#proyects-container {
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.proyects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#proyects-title {
+    color: white;
+    height: 2vh;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    width: 80%;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 250%;
+    margin-top: 10px;
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.proyect {
+    width: 65%;
+    height: 18vh;
+    margin: 5px;
+}
