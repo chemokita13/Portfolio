@@ -15,7 +15,7 @@ console.log(
     " color: rgb(230,15,15); font-weight: 600; padding: 40px"
 );
 console.log(
-    "%chttps://github.com/chemokita13/my-Portfolio",
+    "%chttps://github.com/chemokita13/Portfolio.git",
     "background: rgb(15,15,15); color: rgb(175,200,175); text-decoration: underline; font-weight: 700; padding: 30px;"
 );
 
