@@ -144,11 +144,6 @@ function About() {
                     </div>
                 </Fade>
             </div>
-            <a href="#about">
-                <div className="about-scroll-btn">
-                    <span></span>
-                </div>
-            </a>
         </div>
     );
 }

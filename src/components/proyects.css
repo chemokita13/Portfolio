@@ -1,4 +1,4 @@
-#proyects-container {
+#proyects {
     width: 100%;
     position: absolute;
     z-index: 1;
@@ -7,7 +7,7 @@
     align-items: center;
 }
 
-.proyects {
+.proyects-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -26,7 +26,7 @@
     padding-bottom: 50px;
     font-size: 250%;
     margin-top: 10px;
-    margin-bottom: 0;
+    margin-bottom: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -84,6 +84,14 @@
     width: 245px;
     height: 105px;
     margin-left: 50px;
+    transition: all 0.5s;
+}
+
+.pr-img:hover {
+    transform: scale(1.5);
+    -webkit-box-shadow: 0px 0px 32px -5px rgba(255, 255, 255, 1);
+    -moz-box-shadow: 0px 0px 32px -5px rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 32px -5px rgba(255, 255, 255, 1);
 }
 
 .pr-descriptions {
