@@ -18,9 +18,9 @@ function About() {
     const [clickedMail, setClickedMail] = useState(false);
 
     return (
-        <div id="about" className="component">
+        <main id="about" className="component">
             <Fade top>
-                <div className="about-title">About me</div>
+                <h2 className="about-title">About me</h2>
             </Fade>
             <div className="about-container">
                 <Fade left>
@@ -92,7 +92,7 @@ function About() {
                 </Fade>
             </div>
             <Fade bottom>
-                <div className="contact-title about-title">Contact</div>
+                <h2 className="contact-title about-title">Contact</h2>
             </Fade>
             <div className="about-container contact-container">
                 <Fade left>
@@ -144,7 +144,7 @@ function About() {
                     </div>
                 </Fade>
             </div>
-        </div>
+        </main>
     );
 }
 

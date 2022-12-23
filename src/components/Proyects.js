@@ -7,7 +7,7 @@ import Pulse from "react-reveal/Pulse";
 
 function Proyects() {
     return (
-        <div className="component" id="proyects">
+        <main className="component" id="proyects">
             <Pulse delay={1750}>
                 <div id="proyects-title" className=" bg-glass">
                     Some of my proyects
@@ -15,8 +15,8 @@ function Proyects() {
             </Pulse>
             <div className="proyects-container">
                 <Zoom center>
-                    <div className="proyect bg-glass">
-                        <h3 className="pr-title">Tic Tac Toe</h3>
+                    <article className="proyect bg-glass">
+                        <h2 className="pr-title">Tic Tac Toe</h2>
                         <p className="pr-description">
                             A web game to play in real time tic tac toe with
                             your friend
@@ -61,11 +61,11 @@ function Proyects() {
                                 />
                             </a>
                         </div>
-                    </div>
+                    </article>
                 </Zoom>
                 <Zoom center delay={0.25 * 1000}>
-                    <div className="proyect bg-glass">
-                        <h3 className="pr-title">Pokedex</h3>
+                    <article className="proyect bg-glass">
+                        <h2 className="pr-title">Pokedex</h2>
                         <p className="pr-description">
                             A web to view and search all pokemons that exists
                         </p>
@@ -109,11 +109,11 @@ function Proyects() {
                                 />
                             </a>
                         </div>
-                    </div>
+                    </article>
                 </Zoom>
                 <Zoom center delay={0.5 * 1000}>
-                    <div className="proyect bg-glass">
-                        <h3 className="pr-title">Video library</h3>
+                    <article className="proyect bg-glass">
+                        <h2 className="pr-title">Video library</h2>
                         <p className="pr-description">
                             A web to store videos with a title, description and
                             a preview working with and url
@@ -158,11 +158,11 @@ function Proyects() {
                                 />
                             </a>
                         </div>
-                    </div>
+                    </article>
                 </Zoom>
                 <Zoom center delay={0.75 * 1000}>
-                    <div className="proyect bg-glass">
-                        <h3 className="pr-title">Ricky and Morty characters</h3>
+                    <article className="proyect bg-glass">
+                        <h2 className="pr-title">Ricky and Morty characters</h2>
                         <p className="pr-description">
                             A web that shows all characters appeared in Ricky
                             and Morty
@@ -207,10 +207,10 @@ function Proyects() {
                                 />
                             </a>
                         </div>
-                    </div>
+                    </article>
                 </Zoom>
             </div>
-        </div>
+        </main>
     );
 }
 

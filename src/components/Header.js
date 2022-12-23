@@ -6,14 +6,14 @@ function Header() {
     return (
         <div className="header component">
             <Pulse>
-                <div className="titles-container">
+                <header className="titles-container">
                     <h1 className="titles" id="name">
                         Jos&eacute; Mar&iacute;a Pahino
                     </h1>
                     <h2 className="titles" id="work">
                         Junior full stack developer
                     </h2>
-                </div>
+                </header>
             </Pulse>
             <Jump forever={true}>
                 <a href="#about">
