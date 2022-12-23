@@ -97,9 +97,17 @@ function About() {
             <div className="about-container contact-container">
                 <Fade left>
                     <div className="about-description contact-description">
-                        You can contact me with this form:
+                        <span>You can contact me with this form:</span>
                         <form className="contact-form">
-                            <input name="name" placeholder="Name" />
+                            <div className="nameAndPhone">
+                                <input name="name" placeholder="Name" />
+                                <input name="phone" placeholder="Phone" />
+                            </div>
+                            <input
+                                name="email"
+                                type="email"
+                                placeholder="E-mail"
+                            />
                             <textarea
                                 name="content"
                                 placeholder="content"

@@ -90,6 +90,9 @@
 
 .contact-description {
     width: 500px;
+    padding-top: 65px;
+    padding-bottom: 65px;
+    height: 150px;
 }
 
 .contact-card {
@@ -157,4 +160,15 @@
 .form-button:hover {
     background-color: rgba(255, 255, 255, 0.05);
     scale: 1.05;
+}
+
+.nameAndPhone {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    width: 100%;
+}
+
+.about-description span {
+    font-size: 90%;
 }
