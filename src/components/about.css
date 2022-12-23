@@ -48,6 +48,11 @@
     justify-content: center;
     align-content: center;
     flex-direction: column;
+    transition: all 0.5s;
+}
+
+.about-card:hover {
+    border: 1px solid white;
 }
 
 .about-description {
@@ -62,6 +67,11 @@
     font-size: larger;
     width: 25%;
     height: 50%;
+    transition: all 0.5s;
+}
+
+.about-description:hover {
+    border: 1px solid white;
 }
 
 .contact-container {
@@ -89,7 +99,15 @@
 }
 
 .contact-card li {
+    color: #fff;
     cursor: pointer;
+    transition: all 0.5s;
+}
+
+.contact-card li:hover {
+    color: #f5f5f5;
+    text-decoration: underline;
+    transform: scale(1.01);
 }
 
 .contact-form {

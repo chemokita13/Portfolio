@@ -126,20 +126,24 @@ function About() {
                                     </Fade>
                                 )}
                             </li>
-                            <li>
-                                <u>Github</u>{" "}
-                                <FontAwesomeIcon
-                                    className="icon"
-                                    icon={faCodeMerge}
-                                />
-                            </li>
-                            <li>
-                                <u>Linkedin</u>
-                                <FontAwesomeIcon
-                                    className="icon"
-                                    icon={faLink}
-                                />
-                            </li>
+                            <a href="https://github.com/chemokita13">
+                                <li>
+                                    <u>Github</u>{" "}
+                                    <FontAwesomeIcon
+                                        className="icon"
+                                        icon={faCodeMerge}
+                                    />
+                                </li>
+                            </a>
+                            <a href="https://linkedin.com/in/jos%C3%A9-mar%C3%ADa-pahino-leibu-588303242">
+                                <li>
+                                    <u>Linkedin</u>
+                                    <FontAwesomeIcon
+                                        className="icon"
+                                        icon={faLink}
+                                    />
+                                </li>
+                            </a>
                         </ul>
                     </div>
                 </Fade>

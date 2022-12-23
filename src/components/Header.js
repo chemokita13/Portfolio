@@ -4,7 +4,7 @@ import Jump from "react-reveal/Jump";
 
 function Header() {
     return (
-        <div className="header component">
+        <header className="header component">
             <Pulse>
                 <header className="titles-container">
                     <h1 className="titles" id="name">
@@ -24,7 +24,7 @@ function Header() {
                     </div>
                 </a>
             </Jump>
-        </div>
+        </header>
     );
 }
 
