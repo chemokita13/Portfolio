@@ -172,3 +172,43 @@
 .about-description span {
     font-size: 90%;
 }
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+@media (max-width: 890px) {
+    .about-title {
+        margin-top: 5px;
+    }
+    .about-container {
+        gap: 5px;
+        flex-direction: column;
+        font-size: 75%;
+    }
+    .about-card {
+        padding: 25px;
+        height: 30%;
+        margin-top: 0;
+    }
+    .about-description {
+        padding: 15px;
+        width: 85%;
+        font-size: 115%;
+        height: 20%;
+    }
+    #about {
+        height: 200vh;
+    }
+    .about-container {
+        height: 100vh;
+        padding-bottom: 100px;
+    }
+    .contact {
+        height: 100vh;
+    }
+}

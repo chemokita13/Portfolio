@@ -91,70 +91,74 @@ function About() {
                     </p>
                 </Fade>
             </div>
-            <Fade bottom>
-                <h2 className="contact-title about-title">Contact</h2>
-            </Fade>
-            <div className="about-container contact-container">
-                <Fade left>
-                    <div className="about-description contact-description">
-                        <span>You can contact me with this form:</span>
-                        <form className="contact-form">
-                            <div className="nameAndPhone">
-                                <input name="name" placeholder="Name" />
-                                <input name="phone" placeholder="Phone" />
-                            </div>
-                            <input
-                                name="email"
-                                type="email"
-                                placeholder="E-mail"
-                            />
-                            <textarea
-                                name="content"
-                                placeholder="content"
-                            ></textarea>
-                            <button type="submit" className="form-button">
-                                Submit
-                            </button>
-                        </form>
-                    </div>
+            <div className="contact">
+                <Fade bottom>
+                    <h2 className="contact-title about-title">Contact</h2>
                 </Fade>
-                <Fade right>
-                    <div className="about-card contact-card">
-                        <ul>
-                            <li onClick={() => setClickedMail(!clickedMail)}>
-                                <u>E-mail</u>{" "}
-                                <FontAwesomeIcon
-                                    className="icon"
-                                    icon={faEnvelope}
+                <div className="about-container contact-container">
+                    <Fade left>
+                        <div className="about-description contact-description">
+                            <span>You can contact me with this form:</span>
+                            <form className="contact-form">
+                                <div className="nameAndPhone">
+                                    <input name="name" placeholder="Name" />
+                                    <input name="phone" placeholder="Phone" />
+                                </div>
+                                <input
+                                    name="email"
+                                    type="email"
+                                    placeholder="E-mail"
                                 />
-                                {clickedMail && (
-                                    <Fade top>
-                                        <br />
-                                        <u>chemokita13@gmail.com</u>
-                                    </Fade>
-                                )}
-                            </li>
-                            <a href="https://github.com/chemokita13">
-                                <li>
-                                    <u>Github</u>{" "}
+                                <textarea
+                                    name="content"
+                                    placeholder="content"
+                                ></textarea>
+                                <button type="submit" className="form-button">
+                                    Submit
+                                </button>
+                            </form>
+                        </div>
+                    </Fade>
+                    <Fade right>
+                        <div className="about-card contact-card">
+                            <ul>
+                                <li
+                                    onClick={() => setClickedMail(!clickedMail)}
+                                >
+                                    <u>E-mail</u>{" "}
                                     <FontAwesomeIcon
                                         className="icon"
-                                        icon={faCodeMerge}
+                                        icon={faEnvelope}
                                     />
+                                    {clickedMail && (
+                                        <Fade top>
+                                            <br />
+                                            <u>chemokita13@gmail.com</u>
+                                        </Fade>
+                                    )}
                                 </li>
-                            </a>
-                            <a href="https://linkedin.com/in/jos%C3%A9-mar%C3%ADa-pahino-leibu-588303242">
-                                <li>
-                                    <u>Linkedin</u>
-                                    <FontAwesomeIcon
-                                        className="icon"
-                                        icon={faLink}
-                                    />
-                                </li>
-                            </a>
-                        </ul>
-                    </div>
-                </Fade>
+                                <a href="https://github.com/chemokita13">
+                                    <li>
+                                        <u>Github</u>{" "}
+                                        <FontAwesomeIcon
+                                            className="icon"
+                                            icon={faCodeMerge}
+                                        />
+                                    </li>
+                                </a>
+                                <a href="https://linkedin.com/in/jos%C3%A9-mar%C3%ADa-pahino-leibu-588303242">
+                                    <li>
+                                        <u>Linkedin</u>
+                                        <FontAwesomeIcon
+                                            className="icon"
+                                            icon={faLink}
+                                        />
+                                    </li>
+                                </a>
+                            </ul>
+                        </div>
+                    </Fade>
+                </div>
             </div>
         </main>
     );
