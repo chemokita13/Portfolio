@@ -156,3 +156,23 @@
         margin-bottom: 15px;
     }
 }
+
+@media (max-width: 890px) {
+    .header {
+        font-size: 50%;
+    }
+    .titles-container {
+        height: auto;
+        width: auto;
+        padding: 10px;
+    }
+    .titles-container::before {
+        width: auto;
+    }
+    .titles {
+        width: 235px;
+    }
+    .scroll-btn {
+        display: none;
+    }
+}
