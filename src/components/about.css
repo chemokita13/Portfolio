@@ -183,32 +183,55 @@
 
 @media (max-width: 890px) {
     .about-title {
-        margin-top: 5px;
+        margin-top: 50px;
     }
+
     .about-container {
         gap: 5px;
         flex-direction: column;
         font-size: 75%;
     }
+
     .about-card {
         padding: 25px;
         height: 30%;
         margin-top: 0;
     }
+
     .about-description {
-        padding: 15px;
+        padding: 60px;
         width: 85%;
         font-size: 115%;
         height: 20%;
     }
+
     #about {
         height: 200vh;
     }
+
     .about-container {
         height: 100vh;
         padding-bottom: 100px;
     }
+
     .contact {
+        margin-top: 100px;
+        margin-bottom: 100px;
         height: 100vh;
+    }
+
+    .contact-title {
+        margin-top: 100px;
+    }
+
+    .contact-description {
+        margin-top: 0;
+        padding: 2.25cm;
+    }
+
+    .contact-card {
+        margin-top: 50px;
+        width: 215px;
+        height: 100px;
     }
 }
