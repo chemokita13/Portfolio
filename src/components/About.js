@@ -30,13 +30,18 @@ function About() {
         if (e.target[1].value) {
             emitter.phone = e.target[1].value;
         }
+        if (!window.confirm("Send form?")) {
+            alert("Submit cancelled");
+            return;
+        }
         const res = await axios.post(
             "https://portfolio-backend.fly.dev/send",
             emitter
         );
-        //TODO: implementar react toastify
         // sent alert
-        res.status === 200 && alert("Form succesfully submited!");
+        res.status === 200
+            ? alert("Form succesfully submited!")
+            : alert("Something went wrong, try again later.");
     };
 
     return (
