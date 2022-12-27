@@ -14,8 +14,30 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import Fade from "react-reveal/Fade";
 import { useState } from "react";
+import axios from "axios";
 function About() {
     const [clickedMail, setClickedMail] = useState(false);
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        console.log(e.target[0].value);
+        const emitter = {
+            name: e.target[0].value, // name input
+            email: e.target[2].value, // email input
+            content: e.target[3].value, // content text area
+        };
+        // if the user wrote phone because its optional
+        if (e.target[1].value) {
+            emitter.phone = e.target[1].value;
+        }
+        const res = await axios.post(
+            "https://portfolio-backend.fly.dev/send",
+            emitter
+        );
+        //TODO: implementar react toastify
+        // sent alert
+        res.status === 200 && alert("Form succesfully submited!");
+    };
 
     return (
         <main id="about" className="component">
@@ -99,19 +121,32 @@ function About() {
                     <Fade left>
                         <div className="about-description contact-description">
                             <span>You can contact me with this form:</span>
-                            <form className="contact-form">
+                            <form
+                                className="contact-form"
+                                onSubmit={(e) => handleSubmit(e)}
+                            >
                                 <div className="nameAndPhone">
-                                    <input name="name" placeholder="Name" />
-                                    <input name="phone" placeholder="Phone" />
+                                    <input
+                                        name="name"
+                                        placeholder="Name"
+                                        //onChange={(e) => handleInputChange(e)}
+                                    />
+                                    <input
+                                        name="phone"
+                                        placeholder="Phone"
+                                        //onChange={(e) => handleInputChange(e)}
+                                    />
                                 </div>
                                 <input
                                     name="email"
                                     type="email"
                                     placeholder="E-mail"
+                                    //onChange={(e) => handleInputChange(e)}
                                 />
                                 <textarea
                                     name="content"
                                     placeholder="content"
+                                    //onChange={(e) => handleInputChange(e)}
                                 ></textarea>
                                 <button type="submit" className="form-button">
                                     Submit
