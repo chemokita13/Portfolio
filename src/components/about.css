@@ -235,3 +235,19 @@
         height: 100px;
     }
 }
+
+.btn-scroll {
+    position: absolute;
+    bottom: -500px;
+    right: 50px;
+    width: 60px;
+    height: 150px;
+    border-radius: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+    cursor: pointer;
+    z-index: 999;
+    border: none;
+}
