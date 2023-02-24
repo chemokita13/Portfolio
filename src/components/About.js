@@ -14,34 +14,37 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import Fade from "react-reveal/Fade";
 import { useState } from "react";
-import axios from "axios";
+//import axios from "axios";
 function About() {
     const [clickedMail, setClickedMail] = useState(false);
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        console.log(e.target[0].value);
-        const emitter = {
-            name: e.target[0].value, // name input
-            email: e.target[2].value, // email input
-            content: e.target[3].value, // content text area
-        };
-        // if the user wrote phone because its optional
-        if (e.target[1].value) {
-            emitter.phone = e.target[1].value;
-        }
-        if (!window.confirm("Send form?")) {
-            alert("Submit cancelled");
-            return;
-        }
-        const res = await axios.post(
-            "https://portfolio-backend.fly.dev/send",
-            emitter
+        alert(
+            "Temporarily disabled, contact me by email (chemokita13@gmail.com)"
         );
-        // sent alert
-        res.status === 200
-            ? alert("Form succesfully submited!")
-            : alert("Something went wrong, try again later.");
+        // console.log(e.target[0].value);
+        // const emitter = {
+        //     name: e.target[0].value, // name input
+        //     email: e.target[2].value, // email input
+        //     content: e.target[3].value, // content text area
+        // };
+        // // if the user wrote phone because its optional
+        // if (e.target[1].value) {
+        //     emitter.phone = e.target[1].value;
+        // }
+        // if (!window.confirm("Send form?")) {
+        //     alert("Submit cancelled");
+        //     return;
+        // }
+        // const res = await axios.post(
+        //     "https://portfolio-backend.fly.dev/send",
+        //     emitter
+        // );
+        // // sent alert
+        // res.status === 200
+        //     ? alert("Form succesfully submited!")
+        //     : alert("Something went wrong, try again later.");
     };
 
     return (
@@ -200,6 +203,9 @@ function About() {
                     </Fade>
                 </div>
             </div>
+            <button className="btn-scroll bg-glass">
+                <a href="#proyects">Back to top</a>
+            </button>
         </main>
     );
 }
