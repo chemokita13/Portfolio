@@ -13,7 +13,7 @@ import {
     faLink,
 } from "@fortawesome/free-solid-svg-icons";
 import Fade from "react-reveal/Fade";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 //import axios from "axios";
 function About() {
     const [clickedMail, setClickedMail] = useState(false);
@@ -46,6 +46,21 @@ function About() {
         //     ? alert("Form succesfully submited!")
         //     : alert("Something went wrong, try again later.");
     };
+
+    // useEffect(() => {
+    //     const handleScroll = () => {
+    //         const { scrollY } = window;
+    //         if (scrollY > 100) {
+    //             window.location.href = "/#proyects";
+    //             alert("Scrolling is disabled");
+    //         }
+    //     };
+
+    //     window.addEventListener("scroll", handleScroll);
+    //     return () => {
+    //         window.removeEventListener("scroll", handleScroll);
+    //     };
+    // }, []);
 
     return (
         <main id="about" className="component">
@@ -204,7 +219,13 @@ function About() {
                 </div>
             </div>
             <button className="btn-scroll bg-glass">
-                <a href="#proyects">Back to top</a>
+                <a href="#proyects">
+                    <div className="scroll-btn-about">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </a>
             </button>
         </main>
     );
