@@ -13,7 +13,7 @@ import {
     faLink,
 } from "@fortawesome/free-solid-svg-icons";
 import Fade from "react-reveal/Fade";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 //import axios from "axios";
 function About() {
     const [clickedMail, setClickedMail] = useState(false);
