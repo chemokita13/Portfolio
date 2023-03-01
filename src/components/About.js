@@ -21,7 +21,7 @@ function About() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         alert(
-            "Temporarily disabled, contact me by email (chemokita13@gmail.com)"
+            "Temporarily disabled, contact me by email: (chemokita13@gmail.com)"
         );
         // console.log(e.target[0].value);
         // const emitter = {
