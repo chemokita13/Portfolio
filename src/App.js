@@ -5,7 +5,7 @@ import { useCallback } from "react";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import Proyects from "./components/Proyects";
-import { useEffect } from "React";
+import { useEffect } from "react";
 
 console.log(
     "%cAre you looking how I made my portfolio?",
