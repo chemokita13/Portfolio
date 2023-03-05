@@ -4,7 +4,7 @@ import Jump from "react-reveal/Jump";
 
 function Header() {
     return (
-        <header className="header component">
+        <header className="header component" id="top">
             <Pulse>
                 <header className="titles-container">
                     <h1 className="titles" id="name">

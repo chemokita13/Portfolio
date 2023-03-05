@@ -5,19 +5,19 @@ import { useCallback } from "react";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import Proyects from "./components/Proyects";
-import { useEffect } from "react";
+///import { useEffect } from "react";
 
 console.log(
     "%cAre you looking how I made my portfolio?",
-    "background: #fff; color: rgb(15,15,230); text-decoration: underline; font-weight: 800; padding: 40px; font-size: 105%"
+    "background: #fff; color: rgb(15,15,230); text-decoration: underline; font-weight: 800; padding: 20px; font-size: 105%"
 );
 console.log(
     "%c- Check the code in my github repo: ",
-    " color: rgb(230,15,15); font-weight: 600; padding: 40px"
+    " color: rgb(230,15,15); font-weight: 600; padding: 10px"
 );
 console.log(
     "%chttps://github.com/chemokita13/Portfolio",
-    "background: rgb(15,15,15); color: rgb(175,200,175); text-decoration: underline; font-weight: 700; padding: 30px;"
+    "background: rgb(15,15,15); color: rgb(175,200,175); text-decoration: underline; font-weight: 700; padding: 15px;"
 );
 
 function App() {
