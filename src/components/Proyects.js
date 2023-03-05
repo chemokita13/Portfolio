@@ -8,6 +8,25 @@ import Pulse from "react-reveal/Pulse";
 function Proyects() {
     return (
         <main className="component" id="proyects">
+            {/* create a scroll to top button */}
+            <button className="scrollTop bg-glass" id="right">
+                <a href="#top">
+                    <div className="scroll-btn-top">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </a>
+            </button>
+            <button className="scrollTop bg-glass" id="left">
+                <a href="#top">
+                    <div className="scroll-btn-top">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </a>
+            </button>
             <Pulse delay={1750}>
                 <div id="proyects-title" className=" bg-glass">
                     Some of my proyects
