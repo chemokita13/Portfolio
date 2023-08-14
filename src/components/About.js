@@ -47,23 +47,8 @@ function About() {
         //     : alert("Something went wrong, try again later.");
     };
 
-    // useEffect(() => {
-    //     const handleScroll = () => {
-    //         const { scrollY } = window;
-    //         if (scrollY > 100) {
-    //             window.location.href = "/#proyects";
-    //             alert("Scrolling is disabled");
-    //         }
-    //     };
-
-    //     window.addEventListener("scroll", handleScroll);
-    //     return () => {
-    //         window.removeEventListener("scroll", handleScroll);
-    //     };
-    // }, []);
-
     return (
-        <main id="about" className="component">
+        <main className="component" id="about">
             <Fade top>
                 <h2 className="about-title">About me</h2>
             </Fade>
@@ -218,15 +203,13 @@ function About() {
                     </Fade>
                 </div>
             </div>
-            <button className="btn-scroll bg-glass">
-                <a href="#proyects">
-                    <div className="scroll-btn-about">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </a>
-            </button>
+            <a href="#proyects" className="btn-scroll bg-glass">
+                <div className="scroll-btn-about">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </a>
         </main>
     );
 }

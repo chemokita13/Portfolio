@@ -181,61 +181,6 @@
     width: 100%;
 }
 
-@media (max-width: 890px) {
-    .about-title {
-        margin-top: 50px;
-    }
-
-    .about-container {
-        gap: 5px;
-        flex-direction: column;
-        font-size: 75%;
-    }
-
-    .about-card {
-        padding: 25px;
-        height: 30%;
-        margin-top: 0;
-    }
-
-    .about-description {
-        padding: 60px;
-        width: 85%;
-        font-size: 115%;
-        height: 20%;
-    }
-
-    #about {
-        height: 200vh;
-    }
-
-    .about-container {
-        height: 100vh;
-        padding-bottom: 100px;
-    }
-
-    .contact {
-        margin-top: 100px;
-        margin-bottom: 100px;
-        height: 100vh;
-    }
-
-    .contact-title {
-        margin-top: 100px;
-    }
-
-    .contact-description {
-        margin-top: 0;
-        padding: 2.25cm;
-    }
-
-    .contact-card {
-        margin-top: 50px;
-        width: 215px;
-        height: 100px;
-    }
-}
-
 .btn-scroll {
     position: absolute;
     bottom: -500px;
@@ -293,7 +238,6 @@
 .scroll-btn-about span:nth-of-type(3) {
     animation-delay: 0.5s;
 }
-
 @keyframes scrollSpans {
     100% {
         opacity: 0;
@@ -326,5 +270,79 @@
     100% {
         transform: scale(0.95);
         margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 890px) {
+    .btn-scroll {
+        position: relative;
+        bottom: 15%;
+        right: auto;
+        padding: 10px;
+    }
+    .scroll-btn-about {
+        padding-bottom: 0;
+        bottom: 0;
+        bottom: 25%;
+    }
+
+    .about-title {
+        margin-top: 20%;
+        width: 90%;
+        font-size: 200%;
+    }
+
+    .about-container {
+        gap: 5px;
+        flex-direction: column;
+        font-size: 75%;
+        margin-top: 0;
+        font-weight: 500;
+        justify-content: flex-start;
+        margin-top: 10%;
+    }
+
+    .about-card {
+        padding: 25px;
+        height: 30%;
+        margin-top: 0;
+    }
+
+    .about-description {
+        padding: 5%;
+        height: fit-content;
+        width: 80%;
+    }
+
+    #about {
+        height: 200vh;
+    }
+
+    .about-container {
+        height: 100vh;
+        padding-bottom: 0px;
+    }
+
+    .contact {
+        margin-top: 0;
+        margin-bottom: 100px;
+        height: 100vh;
+    }
+
+    .contact-title {
+        margin-top: 5%;
+    }
+
+    .contact-description {
+        margin-top: 0;
+        padding: 15%;
+        width: 75%;
+    }
+
+    .contact-card {
+        margin-top: 50px;
+        width: 75%;
+        height: auto;
+        font-size: 125%;
     }
 }
