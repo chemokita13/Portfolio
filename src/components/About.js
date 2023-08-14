@@ -79,7 +79,7 @@ function About() {
                                 />
                             </li>
                             <li>
-                                Age: 16 years
+                                Age: 17 years
                                 <FontAwesomeIcon
                                     className="icon"
                                     icon={faBoltLightning}
@@ -114,7 +114,7 @@ function About() {
                                 />
                             </li>
                             <li>
-                                Currently studying first of Bachillerato{" "}
+                                Currently studying second of Bachillerato{" "}
                                 <FontAwesomeIcon
                                     className="icon"
                                     icon={faSchool}
