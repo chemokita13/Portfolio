@@ -58,7 +58,7 @@ function App() {
                 init={particlesInit}
                 options={{
                     fullScreen: {
-                        enable: false,
+                        enable: true,
                         zIndex: -1,
                     },
                     background: {
