@@ -1,0 +1,48 @@
+{
+    "proyects": [
+        {
+            "title": "Tic Tac Toe",
+            "description": "A web game to play in real time tic tac toe with your friend",
+            "lang-list": ["Socket.io", "Next.js", "Tailwindcss"],
+            "links": {
+                "github": "https://github.com/chemokita13/next.js-socket.js-TicTacToe",
+                "demo": "http://64.227.32.220:8080",
+                "img": "../proyects/proyects-img/ttt.png"
+            }
+        },
+        {
+            "title": "Pokedex",
+            "description": "A web app to search pokemons and see their stats",
+            "lang-list": ["Next.js", "Pure css", "Vercel deploy"],
+            "links": {
+                "github": "https://github.com/chemokita13/Pokedex_nextjs",
+                "demo": "https://pokedex-reactjs-chemokita13.vercel.app",
+                "img": "../proyects/proyects-img/pkmn.png"
+            }
+        },
+        {
+            "title": "Video library",
+            "description": "A web to store videos with a title, description and url with a preview",
+            "lang-list": ["MERN stack", "Typescript", "Tailwindcss"],
+            "links": {
+                "github": "https://github.com/chemokita13/video-web_mern-typescript",
+                "demo": "https://video-web-mern-typescript.vercel.app",
+                "img": "../proyects/proyects-img/mern.png"
+            }
+        },
+        {
+            "title": "Rick and Morty characters",
+            "description": "A web that shows all characters appeared in Ricky and Morty",
+            "lang-list": [
+                "React.js + Vite.js",
+                "Tailwindcss",
+                "Gh pages deploy"
+            ],
+            "links": {
+                "github": "https://github.com/chemokita13/ricky-and-mortyAPI_reactwithvitejs",
+                "demo": "https://chemokita13.github.io/ricky-and-mortyAPI_reactwithvitejs/",
+                "img": "../proyects/proyects-img/ricky.png"
+            }
+        }
+    ]
+}

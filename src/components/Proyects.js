@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 import Zoom from "react-reveal/Zoom";
 import Pulse from "react-reveal/Pulse";
-
+import proyectsInfo from "../proyects/proyects.json";
 function Proyects() {
     return (
         <main className="component" id="proyects">
@@ -34,23 +34,35 @@ function Proyects() {
             <div className="proyects-container">
                 <Zoom center>
                     <article className="proyect bg-glass">
-                        <h2 className="pr-title">Tic Tac Toe</h2>
+                        <h2 className="pr-title">
+                            {proyectsInfo.proyects[0].title}
+                        </h2>
                         <p className="pr-description">
-                            A web game to play in real time tic tac toe with
-                            your friend
+                            {proyectsInfo.proyects[0].description}
                         </p>
                         <div className="lang-list">
                             <ul>
-                                <li>Socket.io</li>
-                                <li>Next.js</li>
-                                <li>Tailwindcss</li>
+                                <li>
+                                    {proyectsInfo.proyects[0]["lang-list"][0]}
+                                </li>
+                                <li>
+                                    {proyectsInfo.proyects[0]["lang-list"][1]}
+                                </li>
+                                <li>
+                                    {proyectsInfo.proyects[0]["lang-list"][2]}
+                                </li>
                             </ul>
                         </div>
                         <div className="links">
                             <div className="links-btns">
                                 <ul>
                                     <li>
-                                        <a href="https://github.com/chemokita13/next.js-socket.js-TicTacToe">
+                                        <a
+                                            href={
+                                                proyectsInfo.proyects[0].links
+                                                    .github
+                                            }
+                                        >
                                             <img
                                                 alt=""
                                                 src="https://static-00.iconduck.com/assets.00/github-emoji-512x506-u3px3qmr.png"
@@ -61,7 +73,12 @@ function Proyects() {
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="http://64.227.32.220:8080">
+                                        <a
+                                            href={
+                                                proyectsInfo.proyects[0].links
+                                                    .demo
+                                            }
+                                        >
                                             <FontAwesomeIcon
                                                 className="pr-icon"
                                                 icon={faLink}
@@ -71,9 +88,10 @@ function Proyects() {
                                     </li>
                                 </ul>
                             </div>
-                            <a href="http://64.227.32.220:8080">
+                            <a href={proyectsInfo.proyects[0].links.demo}>
                                 <img
-                                    src={require("../proyects-imgs/ttt.png")}
+                                    src={require(proyectsInfo.proyects[0].links
+                                        .img)}
                                     alt="proyect 1"
                                     className="pr-img"
                                 />
@@ -83,22 +101,35 @@ function Proyects() {
                 </Zoom>
                 <Zoom center delay={0.25 * 1000}>
                     <article className="proyect bg-glass">
-                        <h2 className="pr-title">Pokedex</h2>
+                        <h2 className="pr-title">
+                            {proyectsInfo.proyects[1].title}
+                        </h2>
                         <p className="pr-description">
-                            A web to view and search all pokemons that exists
+                            {proyectsInfo.proyects[1].description}
                         </p>
                         <div className="lang-list">
                             <ul>
-                                <li>Next.js</li>
-                                <li>Pure css</li>
-                                <li>Vercel deploy</li>
+                                <li>
+                                    {proyectsInfo.proyects[1]["lang-list"][0]}
+                                </li>
+                                <li>
+                                    {proyectsInfo.proyects[1]["lang-list"][1]}
+                                </li>
+                                <li>
+                                    {proyectsInfo.proyects[1]["lang-list"][2]}
+                                </li>
                             </ul>
                         </div>
                         <div className="links">
                             <div className="links-btns">
                                 <ul>
                                     <li>
-                                        <a href="https://github.com/chemokita13/Pokedex_nextjs">
+                                        <a
+                                            href={
+                                                proyectsInfo.proyects[1].links
+                                                    .github
+                                            }
+                                        >
                                             <img
                                                 alt=""
                                                 src="https://static-00.iconduck.com/assets.00/github-emoji-512x506-u3px3qmr.png"
@@ -109,7 +140,12 @@ function Proyects() {
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://pokedex-reactjs-chemokita13.vercel.app">
+                                        <a
+                                            href={
+                                                proyectsInfo.proyects[1].links
+                                                    .demo
+                                            }
+                                        >
                                             <FontAwesomeIcon
                                                 className="pr-icon"
                                                 icon={faLink}
@@ -119,9 +155,10 @@ function Proyects() {
                                     </li>
                                 </ul>
                             </div>
-                            <a href="https://pokedex-reactjs-chemokita13.vercel.app">
+                            <a href={proyectsInfo.proyects[1].links.demo}>
                                 <img
-                                    src={require("../proyects-imgs/pkmn.png")}
+                                    src={require(proyectsInfo.proyects[1].links
+                                        .img)}
                                     alt="proyect 2"
                                     className="pr-img"
                                 />
@@ -131,23 +168,35 @@ function Proyects() {
                 </Zoom>
                 <Zoom center delay={0.5 * 1000}>
                     <article className="proyect bg-glass">
-                        <h2 className="pr-title">Video library</h2>
+                        <h2 className="pr-title">
+                            {proyectsInfo.proyects[2].title}
+                        </h2>
                         <p className="pr-description">
-                            A web to store videos with a title, description and
-                            a preview working with and url
+                            {proyectsInfo.proyects[2].description}
                         </p>
                         <div className="lang-list">
                             <ul>
-                                <li>MERN stack</li>
-                                <li>Typescript</li>
-                                <li>Tailwindcss</li>
+                                <li>
+                                    {proyectsInfo.proyects[2]["lang-list"][0]}
+                                </li>
+                                <li>
+                                    {proyectsInfo.proyects[2]["lang-list"][1]}
+                                </li>
+                                <li>
+                                    {proyectsInfo.proyects[2]["lang-list"][2]}
+                                </li>
                             </ul>
                         </div>
                         <div className="links">
                             <div className="links-btns">
                                 <ul>
                                     <li>
-                                        <a href="https://github.com/chemokita13/video-web_mern-typescript">
+                                        <a
+                                            href={
+                                                proyectsInfo.proyects[2].links
+                                                    .github
+                                            }
+                                        >
                                             <img
                                                 alt=""
                                                 src="https://static-00.iconduck.com/assets.00/github-emoji-512x506-u3px3qmr.png"
@@ -158,7 +207,12 @@ function Proyects() {
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://back-mern.fly.dev/">
+                                        <a
+                                            href={
+                                                proyectsInfo.proyects[2].links
+                                                    .demo
+                                            }
+                                        >
                                             <FontAwesomeIcon
                                                 className="pr-icon"
                                                 icon={faLink}
@@ -168,9 +222,10 @@ function Proyects() {
                                     </li>
                                 </ul>
                             </div>
-                            <a href="https://back-mern.fly.dev/">
+                            <a href={proyectsInfo.proyects[2].links.demo}>
                                 <img
-                                    src={require("../proyects-imgs/mern.png")}
+                                    src={require(proyectsInfo.proyects[2].links
+                                        .img)}
                                     alt="proyect 2"
                                     className="pr-img"
                                 />
@@ -180,23 +235,35 @@ function Proyects() {
                 </Zoom>
                 <Zoom center delay={0.75 * 1000}>
                     <article className="proyect bg-glass">
-                        <h2 className="pr-title">Ricky and Morty characters</h2>
+                        <h2 className="pr-title">
+                            {proyectsInfo.proyects[3].title}
+                        </h2>
                         <p className="pr-description">
-                            A web that shows all characters appeared in Ricky
-                            and Morty
+                            {proyectsInfo.proyects[3].description}
                         </p>
                         <div className="lang-list">
                             <ul>
-                                <li>React.js + Vite.js</li>
-                                <li>Tailwindcss</li>
-                                <li>Gh pages deploy</li>
+                                <li>
+                                    {proyectsInfo.proyects[3]["lang-list"][0]}
+                                </li>
+                                <li>
+                                    {proyectsInfo.proyects[3]["lang-list"][1]}
+                                </li>
+                                <li>
+                                    {proyectsInfo.proyects[3]["lang-list"][2]}
+                                </li>
                             </ul>
                         </div>
                         <div className="links">
                             <div className="links-btns">
                                 <ul>
                                     <li>
-                                        <a href="https://github.com/chemokita13/ricky-and-mortyAPI_reactwithvitejs">
+                                        <a
+                                            href={
+                                                proyectsInfo.proyects[3].links
+                                                    .github
+                                            }
+                                        >
                                             <img
                                                 alt=""
                                                 src="https://static-00.iconduck.com/assets.00/github-emoji-512x506-u3px3qmr.png"
@@ -207,7 +274,12 @@ function Proyects() {
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://chemokita13.github.io/ricky-and-mortyAPI_reactwithvitejs/">
+                                        <a
+                                            href={
+                                                proyectsInfo.proyects[3].links
+                                                    .demo
+                                            }
+                                        >
                                             <FontAwesomeIcon
                                                 className="pr-icon"
                                                 icon={faLink}
@@ -217,9 +289,10 @@ function Proyects() {
                                     </li>
                                 </ul>
                             </div>
-                            <a href="https://chemokita13.github.io/ricky-and-mortyAPI_reactwithvitejs/">
+                            <a href={proyectsInfo.proyects[3].links.demo}>
                                 <img
-                                    src={require("../proyects-imgs/ricky.png")}
+                                    src={require(proyectsInfo.proyects[3].links
+                                        .img)}
                                     alt="proyect 2"
                                     className="pr-img"
                                 />
