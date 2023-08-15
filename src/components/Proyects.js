@@ -8,7 +8,6 @@ import Pulse from "react-reveal/Pulse";
 function Proyects() {
     return (
         <main className="component" id="proyects">
-            {/* create a scroll to top button */}
             <button className="scrollTop bg-glass" id="right">
                 <a href="#top">
                     <div className="scroll-btn-top">
