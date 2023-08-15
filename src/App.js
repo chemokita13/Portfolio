@@ -5,7 +5,6 @@ import { useCallback } from "react";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import Proyects from "./components/Proyects";
-///import { useEffect } from "react";
 
 console.log(
     "%cAre you looking how I made my portfolio?",
@@ -21,35 +20,13 @@ console.log(
 );
 
 function App() {
+    // particles loader
     const particlesInit = useCallback(async (engine) => {
         await loadFull(engine);
     }, []);
+
     // mobile detect
-    const mobile =
-        navigator.userAgent.match(/Android/i) ||
-        navigator.userAgent.match(/webOS/i) ||
-        navigator.userAgent.match(/iPhone/i) ||
-        navigator.userAgent.match(/iPad/i) ||
-        navigator.userAgent.match(/iPod/i) ||
-        navigator.userAgent.match(/BlackBerry/i) ||
-        navigator.userAgent.match(/Windows Phone/i)
-            ? true
-            : false;
-
-    // useEffect(() => {
-    //     const handleScroll = () => {
-    //         const { scrollY } = window;
-    //         if (scrollY > 100) {
-    //             window.location.href = "/#proyects";
-    //             alert("Scrolling is disabled");
-    //         }
-    //     };
-
-    //     window.addEventListener("scroll", handleScroll);
-    //     return () => {
-    //         window.removeEventListener("scroll", handleScroll);
-    //     };
-    // }, []);
+    const mobile = window.innerWidth < 890;
 
     return (
         <div className="GENERAL-CONTAINER">
@@ -66,7 +43,7 @@ function App() {
                             value: "#000",
                         },
                     },
-                    fpsLimit: 30,
+                    fpsLimit: mobile ? 10 : 30,
                     interactivity: {
                         events: {
                             onClick: {
@@ -74,7 +51,8 @@ function App() {
                                 mode: "push",
                             },
                             onHover: {
-                                enable: false,
+                                enable: mobile ? false : true,
+                                mode: "repulse",
                             },
                             resize: mobile ? false : true,
                         },
