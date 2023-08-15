@@ -278,11 +278,13 @@
         position: relative;
         bottom: 15%;
         right: auto;
-        padding: 10px;
+        padding: 20px;
+        height: 75%;
     }
     .scroll-btn-about {
         padding-bottom: 0;
         bottom: 0;
+        overflow: hidden;
     }
 
     .about-title {
