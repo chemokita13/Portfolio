@@ -90,8 +90,7 @@ function Proyects() {
                             </div>
                             <a href={proyectsInfo.proyects[0].links.demo}>
                                 <img
-                                    src={require(proyectsInfo.proyects[0].links
-                                        .img)}
+                                    src={require("../proyects/proyects-imgs/ttt.png")}
                                     alt="proyect 1"
                                     className="pr-img"
                                 />
@@ -157,8 +156,7 @@ function Proyects() {
                             </div>
                             <a href={proyectsInfo.proyects[1].links.demo}>
                                 <img
-                                    src={require(proyectsInfo.proyects[1].links
-                                        .img)}
+                                    src={require("../proyects/proyects-imgs/pkmn.png")}
                                     alt="proyect 2"
                                     className="pr-img"
                                 />
@@ -224,8 +222,7 @@ function Proyects() {
                             </div>
                             <a href={proyectsInfo.proyects[2].links.demo}>
                                 <img
-                                    src={require(proyectsInfo.proyects[2].links
-                                        .img)}
+                                    src={require("../proyects/proyects-imgs/mern.png")}
                                     alt="proyect 2"
                                     className="pr-img"
                                 />
@@ -291,8 +288,7 @@ function Proyects() {
                             </div>
                             <a href={proyectsInfo.proyects[3].links.demo}>
                                 <img
-                                    src={require(proyectsInfo.proyects[3].links
-                                        .img)}
+                                    src={require("../proyects/proyects-imgs/ricky.png")}
                                     alt="proyect 2"
                                     className="pr-img"
                                 />
