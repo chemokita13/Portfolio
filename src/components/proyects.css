@@ -123,6 +123,7 @@
 .lang-list {
     color: #fff;
     margin-left: 25px;
+    cursor: default;
 }
 
 .lang-list ul {
@@ -140,7 +141,6 @@
 
 .scrollTop {
     position: absolute;
-
     z-index: 999;
     bottom: 50%;
     padding: 60px 30px;
@@ -161,8 +161,6 @@
 }
 
 .scroll-btn-top {
-    /* border: 1px solid red; */
-
     position: absolute;
     bottom: 40px;
     height: 50px;
@@ -171,7 +169,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* overflow: hidden; */
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     padding-top: 10px;
