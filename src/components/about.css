@@ -198,8 +198,6 @@
 }
 
 .scroll-btn-about {
-    /* border: 1px solid red; */
-
     position: absolute;
     bottom: 50px;
     height: 50px;
@@ -209,7 +207,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* overflow: hidden; */
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     padding-top: 10px;
