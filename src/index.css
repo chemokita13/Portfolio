@@ -27,7 +27,8 @@ html {
     backdrop-filter: blur(5px);
 }
 
-/* @media (max-width: 890px) {
-    * {
+@media (max-height: 950px) {
+    .component {
+        height: 150vh;
     }
-} */
+}

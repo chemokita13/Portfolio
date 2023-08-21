@@ -1,6 +1,5 @@
 #about {
     width: 100%;
-    height: 100vh;
     color: white;
     z-index: 10;
     display: flex;
@@ -76,6 +75,7 @@
 
 .contact-container {
     margin-top: 5px;
+    width: 100%;
 }
 
 .contact-title {
@@ -89,15 +89,15 @@
 }
 
 .contact-description {
-    width: 500px;
+    width: 35%;
     padding-top: 65px;
     padding-bottom: 65px;
-    height: 150px;
+    height: auto;
 }
 
 .contact-card {
     padding-inline: 130px;
-    width: 320px;
+    width: 20%;
     text-align: center;
 }
 
@@ -183,8 +183,8 @@
 
 .btn-scroll {
     position: absolute;
-    bottom: -500px;
-    right: 50px;
+    bottom: -500%;
+    right: 2%;
     width: 60px;
     height: 150px;
     border-radius: 15%;
@@ -345,5 +345,11 @@
         width: 75%;
         height: auto;
         font-size: 125%;
+    }
+}
+
+@media (max-height: 950px) {
+    .btn-scroll {
+        bottom: -100vh;
     }
 }
