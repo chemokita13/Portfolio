@@ -90,7 +90,7 @@ function Proyects() {
                             </div>
                             <a href={proyectsInfo.proyects[0].links.demo}>
                                 <img
-                                    src={require("../proyects/proyects-imgs/ttt.png")}
+                                    src={require("../proyects/proyects-imgs/tictactoe.webp")}
                                     alt="proyect 1"
                                     className="pr-img"
                                 />
@@ -156,7 +156,7 @@ function Proyects() {
                             </div>
                             <a href={proyectsInfo.proyects[1].links.demo}>
                                 <img
-                                    src={require("../proyects/proyects-imgs/pkmn.png")}
+                                    src={require("../proyects/proyects-imgs/pkmn.webp")}
                                     alt="proyect 2"
                                     className="pr-img"
                                 />
@@ -222,7 +222,7 @@ function Proyects() {
                             </div>
                             <a href={proyectsInfo.proyects[2].links.demo}>
                                 <img
-                                    src={require("../proyects/proyects-imgs/mern.png")}
+                                    src={require("../proyects/proyects-imgs/mern.webp")}
                                     alt="proyect 2"
                                     className="pr-img"
                                 />
@@ -288,7 +288,7 @@ function Proyects() {
                             </div>
                             <a href={proyectsInfo.proyects[3].links.demo}>
                                 <img
-                                    src={require("../proyects/proyects-imgs/ricky.png")}
+                                    src={require("../proyects/proyects-imgs/ricky.webp")}
                                     alt="proyect 2"
                                     className="pr-img"
                                 />
