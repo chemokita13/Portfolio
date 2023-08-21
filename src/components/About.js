@@ -109,7 +109,7 @@ function About() {
                     </div>
                 </Fade>
                 <Fade right>
-                    <p className="about-description">
+                    <h2 className="about-description">
                         I am a full stack developer living in Spain. I have a
                         high level in <u>React.js and SSR with Next.js</u>, but
                         also I have practised with Angular or Handlebars. In the
@@ -118,7 +118,7 @@ function About() {
                         with Nest.js, Django and more. Talking about databases,
                         I love <u>MongoDb</u> but also I have a good level with
                         MySQL.
-                    </p>
+                    </h2>
                 </Fade>
             </div>
             <div className="contact">
