@@ -281,7 +281,7 @@
         bottom: 15%;
         right: auto;
         padding: 20px;
-        height: 75%;
+        height: 45px;
     }
     .scroll-btn-about {
         padding-bottom: 0;
@@ -350,8 +350,8 @@
     }
 }
 
-@media (max-height: 950px) {
+/* @media (max-height: 950px) {
     .btn-scroll {
         bottom: -100vh;
     }
-}
+} */
