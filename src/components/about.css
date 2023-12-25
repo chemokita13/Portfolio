@@ -274,6 +274,89 @@
         margin-bottom: 15px;
     }
 }
+@media (max-width: 1090px) {
+    .btn-scroll {
+        position: relative;
+        bottom: 400px;
+        right: auto;
+        padding: 20px;
+        height: 45px;
+    }
+    .scroll-btn-about {
+        padding-bottom: 0;
+        bottom: 0;
+        overflow: hidden;
+    }
+
+    .about-title {
+        margin-top: 1%;
+        width: 90%;
+        font-size: 275%;
+    }
+
+    .about-container {
+        gap: 5px;
+        flex-direction: column;
+        font-size: 75%;
+        font-weight: 500;
+        justify-content: flex-start;
+        margin-top: 2%;
+        height: 90vh;
+    }
+
+    .about-card {
+        height: 30%;
+        margin-top: 0;
+        padding: 0;
+        width: 50%;
+        text-align: justify;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-size: 130%;
+    }
+
+    .about-description {
+        padding: 0;
+        height: fit-content;
+        width: 75%;
+        text-align: justify;
+        font-size: 150%;
+        padding: 25px;
+    }
+
+    #about {
+        height: 200vh;
+    }
+
+    .contact {
+        margin-top: 0;
+        margin-bottom: 100px;
+    }
+
+    .contact-title {
+        margin-top: 5%;
+    }
+
+    .contact-description {
+        margin-top: 0;
+        width: 75%;
+    }
+
+    .contact-form {
+        gap: 10px;
+    }
+
+    .contact-card {
+        padding: 0;
+        height: 20%;
+        margin-top: 15px;
+        width: 40%;
+    }
+}
 
 @media (max-width: 890px) {
     .btn-scroll {
@@ -338,7 +421,7 @@
 
     .contact-description {
         margin-top: 0;
-        padding: 15%;
+        padding: 25px;
         width: 75%;
     }
 
@@ -349,9 +432,3 @@
         font-size: 125%;
     }
 }
-
-/* @media (max-height: 950px) {
-    .btn-scroll {
-        bottom: -100vh;
-    }
-} */
