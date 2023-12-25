@@ -34,7 +34,6 @@ function About() {
         if (e.target[1].value) {
             emitter.phone = e.target[1].value;
         }
-        console.log(process.env.REACT_APP_SEND_KEY);
 
         const res = await resend.emails.send({
             from: "onboarding@resend.dev",
