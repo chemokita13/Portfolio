@@ -1,6 +1,16 @@
 {
     "proyects": [
         {
+            "title": "Berealgate",
+            "description": "A web app that uses BerealAPI decoded with reverse engineering",
+            "lang-list": ["Nextjs, Nestjs", "Typescript", "Tailwindcss"],
+            "links": {
+                "github": "https://github.com/chemokita13/berealgate",
+                "demo": "https://berealgate.vercel.app",
+                "img": "../proyects/proyects-img/br.png"
+            }
+        },
+        {
             "title": "Tic Tac Toe",
             "description": "A web game to play in real time tic tac toe with your friend",
             "lang-list": ["Socket.io", "Next.js", "Tailwindcss"],
@@ -20,16 +30,7 @@
                 "img": "../proyects/proyects-img/pkmn.png"
             }
         },
-        {
-            "title": "Video library",
-            "description": "A web to store videos with a title, description and url with a preview",
-            "lang-list": ["MERN stack", "Typescript", "Tailwindcss"],
-            "links": {
-                "github": "https://github.com/chemokita13/video-web_mern-typescript",
-                "demo": "https://video-web-mern-typescript.vercel.app",
-                "img": "../proyects/proyects-img/mern.png"
-            }
-        },
+
         {
             "title": "Rick and Morty characters",
             "description": "A web that shows all characters appeared in Ricky and Morty",
