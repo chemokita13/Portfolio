@@ -28,7 +28,7 @@ function Proyects() {
             </button>
             <Pulse delay={1750}>
                 <div id="proyects-title" className=" bg-glass">
-                    Some of my proyects
+                    Some of my projects
                 </div>
             </Pulse>
             <div className="proyects-container">
