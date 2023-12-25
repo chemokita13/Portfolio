@@ -50,7 +50,7 @@ function About() {
     return (
         <main className="component" id="about">
             <Fade top>
-                <h2 className="about-title">About me</h2>
+                <h3 className="about-title">About me</h3>
             </Fade>
             <div className="about-container">
                 <Fade left>
@@ -109,7 +109,7 @@ function About() {
                     </div>
                 </Fade>
                 <Fade right>
-                    <h2 className="about-description">
+                    <h4 className="about-description">
                         I am a full stack developer living in Spain. I have a
                         high level in <u>React.js and SSR with Next.js</u>, but
                         also I have practised with Angular or Handlebars. In the
@@ -118,12 +118,12 @@ function About() {
                         with Nest.js, Django and more. Talking about databases,
                         I love <u>MongoDb</u> but also I have a good level with
                         MySQL.
-                    </h2>
+                    </h4>
                 </Fade>
             </div>
             <div className="contact">
                 <Fade bottom>
-                    <h2 className="contact-title about-title">Contact</h2>
+                    <h3 className="contact-title about-title">Contact</h3>
                 </Fade>
                 <div className="about-container contact-container">
                     <Fade left>
