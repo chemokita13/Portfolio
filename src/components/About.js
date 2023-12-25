@@ -1,5 +1,6 @@
 import "./about.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Resend } from "resend";
 import {
     faHouse,
     faUser,
@@ -15,24 +16,35 @@ import {
 import Fade from "react-reveal/Fade";
 import { useState } from "react"; // for the form
 //import axios from "axios";
+const resend = new Resend(process.env.REACT_APP_SEND_KEY);
 function About() {
     const [clickedMail, setClickedMail] = useState(false);
 
     const handleSubmit = async (e) => {
-        e.preventDefault();
         alert(
-            "Temporarily disabled, contact me by email: (chemokita13@gmail.com)"
+            "Temporaly disabled, sorry for the inconvenience, contact me at email: chemokita13@gmail.com"
         );
+        e.preventDefault();
         // console.log(e.target[0].value);
-        // const emitter = {
-        //     name: e.target[0].value, // name input
-        //     email: e.target[2].value, // email input
-        //     content: e.target[3].value, // content text area
-        // };
+        let emitter = {
+            name: e.target[0].value, // name input
+            email: e.target[2].value, // email input
+            content: e.target[3].value, // content text area
+        };
+        if (e.target[1].value) {
+            emitter.phone = e.target[1].value;
+        }
+        console.log(process.env.REACT_APP_SEND_KEY);
+
+        const res = await resend.emails.send({
+            from: "onboarding@resend.dev",
+            to: "chemokita13@gmail.com",
+            subject: "New message from portfolio",
+            html: "flele",
+        });
+        console.log(res);
         // // if the user wrote phone because its optional
-        // if (e.target[1].value) {
-        //     emitter.phone = e.target[1].value;
-        // }
+
         // if (!window.confirm("Send form?")) {
         //     alert("Submit cancelled");
         //     return;
