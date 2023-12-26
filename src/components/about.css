@@ -188,7 +188,7 @@
 
 .btn-scroll {
     position: absolute;
-    bottom: -50vh;
+    bottom: -100vh;
     right: 2%;
     width: 60px;
     height: 150px;
