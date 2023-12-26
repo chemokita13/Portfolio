@@ -232,7 +232,7 @@
     }
 }
 
-@media (max-width: 890px) {
+@media (max-width: 1350px) {
     .scrollTop {
         display: none;
     }
