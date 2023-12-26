@@ -6,6 +6,8 @@ import Zoom from "react-reveal/Zoom";
 import Pulse from "react-reveal/Pulse";
 import proyectsInfo from "../proyects/proyects.json";
 function Proyects() {
+    // mobile detect
+    const mobile = window.innerWidth < 890;
     return (
         <main className="component" id="proyects">
             <button className="scrollTop bg-glass" id="right">
@@ -26,7 +28,7 @@ function Proyects() {
                     </div>
                 </a>
             </button>
-            <Pulse delay={1750}>
+            <Pulse delay={mobile ? 1750 : 0}>
                 <h3 id="proyects-title" className=" bg-glass">
                     Some of my projects
                 </h3>
@@ -98,7 +100,7 @@ function Proyects() {
                         </div>
                     </article>
                 </Zoom>
-                <Zoom center delay={0.25 * 1000}>
+                <Zoom center delay={mobile ? 0.25 * 1000 : 0}>
                     <article className="proyect bg-glass">
                         <h2 className="pr-title">
                             {proyectsInfo.proyects[1].title}
@@ -164,7 +166,7 @@ function Proyects() {
                         </div>
                     </article>
                 </Zoom>
-                <Zoom center delay={0.5 * 1000}>
+                <Zoom center delay={mobile ? 0.5 * 1000 : 0}>
                     <article className="proyect bg-glass">
                         <h2 className="pr-title">
                             {proyectsInfo.proyects[2].title}
@@ -230,7 +232,7 @@ function Proyects() {
                         </div>
                     </article>
                 </Zoom>
-                <Zoom center delay={0.75 * 1000}>
+                <Zoom center delay={mobile ? 0.75 * 1000 : 0}>
                     <article className="proyect bg-glass">
                         <h2 className="pr-title">
                             {proyectsInfo.proyects[3].title}
