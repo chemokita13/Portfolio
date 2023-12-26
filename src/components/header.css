@@ -2,6 +2,9 @@
     background: #000;
     color: #fff;
     background-attachment: fixed;
+    display: grid;
+    justify-content: center;
+    align-items: center;
 }
 
 .titles-container:before {
@@ -24,12 +27,6 @@
 }
 
 .titles-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
     width: 950px;
     height: 250px;
     z-index: 1;
@@ -165,7 +162,7 @@
     }
     .titles-container {
         height: 50%;
-        width: 75%;
+        width: 90%;
         padding: 10px;
     }
     .titles-container::before {
