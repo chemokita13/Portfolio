@@ -1,6 +1,5 @@
 import "./about.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Resend } from "resend";
 import {
     faHouse,
     faUser,
@@ -16,47 +15,47 @@ import {
 import Fade from "react-reveal/Fade";
 import { useState } from "react"; // for the form
 //import axios from "axios";
-const resend = new Resend(process.env.REACT_APP_SEND_KEY);
+// const resend = new Resend(process.env.REACT_APP_SEND_KEY);
 function About() {
     const [clickedMail, setClickedMail] = useState(false);
 
-    const handleSubmit = async (e) => {
-        alert(
-            "Temporaly disabled, sorry for the inconvenience, contact me at email: chemokita13@gmail.com"
-        );
-        e.preventDefault();
-        // console.log(e.target[0].value);
-        let emitter = {
-            name: e.target[0].value, // name input
-            email: e.target[2].value, // email input
-            content: e.target[3].value, // content text area
-        };
-        if (e.target[1].value) {
-            emitter.phone = e.target[1].value;
-        }
+    // const handleSubmit = async (e) => {
+    //     alert(
+    //         "Temporaly disabled, sorry for the inconvenience, contact me at email: chemokita13@gmail.com"
+    //     );
+    //     e.preventDefault();
+    //     // console.log(e.target[0].value);
+    //     let emitter = {
+    //         name: e.target[0].value, // name input
+    //         email: e.target[2].value, // email input
+    //         content: e.target[3].value, // content text area
+    //     };
+    //     if (e.target[1].value) {
+    //         emitter.phone = e.target[1].value;
+    //     }
 
-        const res = await resend.emails.send({
-            from: "onboarding@resend.dev",
-            to: "chemokita13@gmail.com",
-            subject: "New message from portfolio",
-            html: "flele",
-        });
-        console.log(res);
-        // // if the user wrote phone because its optional
+    //     const res = await resend.emails.send({
+    //         from: "onboarding@resend.dev",
+    //         to: "chemokita13@gmail.com",
+    //         subject: "New message from portfolio",
+    //         html: "flele",
+    //     });
+    //     console.log(res);
+    //     // // if the user wrote phone because its optional
 
-        // if (!window.confirm("Send form?")) {
-        //     alert("Submit cancelled");
-        //     return;
-        // }
-        // const res = await axios.post(
-        //     "https://portfolio-backend.fly.dev/send",
-        //     emitter
-        // );
-        // // sent alert
-        // res.status === 200
-        //     ? alert("Form succesfully submited!")
-        //     : alert("Something went wrong, try again later.");
-    };
+    //     // if (!window.confirm("Send form?")) {
+    //     //     alert("Submit cancelled");
+    //     //     return;
+    //     // }
+    //     // const res = await axios.post(
+    //     //     "https://portfolio-backend.fly.dev/send",
+    //     //     emitter
+    //     // );
+    //     // // sent alert
+    //     // res.status === 200
+    //     //     ? alert("Form succesfully submited!")
+    //     //     : alert("Something went wrong, try again later.");
+    // };
 
     return (
         <main className="component" id="about">
@@ -75,7 +74,7 @@ function About() {
                                 />
                             </li>
                             <li>
-                                Age: 17 years
+                                Age: 18 years
                                 <FontAwesomeIcon
                                     className="icon"
                                     icon={faBoltLightning}
@@ -110,7 +109,7 @@ function About() {
                                 />
                             </li>
                             <li>
-                                Currently studying second of Bachillerato{" "}
+                                Currently studying software engineering
                                 <FontAwesomeIcon
                                     className="icon"
                                     icon={faSchool}
@@ -142,7 +141,7 @@ function About() {
                             <span>You can contact me with this form:</span>
                             <form
                                 className="contact-form"
-                                onSubmit={(e) => handleSubmit(e)}
+                                // onSubmit={(e) => handleSubmit(e)}
                             >
                                 <div className="nameAndPhone">
                                     <input
